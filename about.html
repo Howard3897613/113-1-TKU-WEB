@@ -3,15 +3,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>411630519 自我介紹</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <p>
+    <div id="app">
     <h1>自我介紹</h1>
     <h2>113(上)網路程式設計</h2>
-    <h3><em>2024/09/20</em></h3>
+    <h3><em>2024/09/26 更新</em></h3>
     <img src="dance.gif" alt="哈哈哈哈哈">
-    </p>
+    
+    </div>
+
     <p>
         <table cellpadding="10">
             <tr>
@@ -24,7 +27,7 @@
             </tr>
             <tr>
             <td>陳庭浩</td>
-            <td>資管3C</td>
+            <td>資訊管理系</td>
             <td>20歲</td>
             <td><em>2004/04/25</em></td>
             <td>金牛座</td>
@@ -36,16 +39,16 @@
     </p>
 
     <p><ol>
-        <li><h3>履歷</h3>
+        <li><h4>履歷</h4>
             <ul>
-                <li><em>畢業於</em>國立新和國小</li>
-                <li><em>畢業於</em>私立南山國中</li>
-                <li><em>畢業於</em>私立南山高中</li>
-                <li><em>就讀於</em>淡江大學資訊管理系</li>
-                <li><em>曾就職於</em>台灣賓士股份有限公司 IT部門 工程師</li>
+                <li>畢業於國立新和國小</li>
+                <li>畢業於私立南山國中</li>
+                <li>畢業於私立南山高中</li>
+                <li>就讀於淡江大學資訊管理系</li>
+                <li>曾就職於台灣賓士股份有限公司 IT部門 工程師</li>
             </ul>
         </li>
-        <li><h3>成就</h3>
+        <li><h4>成就</h4>
             <ul>
                 <li>105創客馬拉松競賽 最佳造型獎</li>
                 <li>TQC 程式語言C 專業設計人才認證合格證書</li>
@@ -57,9 +60,9 @@
                 <li>網路上連載原創小說</li>
             </ul>
             </li>
-        <li><h3>興趣、同時也是專長</h3>
+        <li><h4>興趣、同時也是專長</h4>
             <ul>
-                <li>打遊戲（這不是專長，我特別菜）</li>
+                <li>打遊戲<em>（這不是專長，我特別菜）</em></li>
                 <li>看小說、寫小說</li>
                 <li>攝影</li>
                 <li>研究電腦</li>
@@ -71,13 +74,15 @@
         <span><p>這是一個小小的區塊，它很可愛。</p></span>
     </div>
         
-    <strong>別填表單，會爆炸</strong>
-    <form action="/submit" method="post">
-        <label for="name">意見:</label>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="提交">
-    </form>
     
+    <section class="comments-section card">
+        <form action="/submit" method="post">
+            <label for="comment">發送留言:</label>
+            <input type="text" id="comment" name="comment" placeholder="輸入留言">
+            <input type="submit" value="提交">
+        </form>
+        <p><strong><span class="highlight">別填表單，會爆炸</span></strong></p>
+    </section>
       
 
   </body>
